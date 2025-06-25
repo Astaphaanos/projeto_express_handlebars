@@ -1,0 +1,9 @@
+<h1>Bem vindo a nossa loja virtual!</h1>
+<h2>Confira os nossos produtos:</h2>
+{{#each products}}
+    <div>
+        <h3>{{this.title}}</h3>
+        <p>{{this.price}}</p>
+        <p><a href="/product/{{this.id}}">Ver mais</a></p>
+    </div>
+{{/each}}
